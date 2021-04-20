@@ -8,6 +8,12 @@ Given a point P (p) on a cartesian plane, take a given amount of steps along the
 After every 3rd iteration, take a given amount of steps backwards in the x and y directions.
 Arrive at a point (x, y) whose distance is closest to p (using the distance formula). Start at the origin (0,0).
 
+1) Define a dynamic programming algorithm that advances and retreats the required number of steps along the x and y axes and determines the closest point to p. After each iteration, calculate the distance between point p and the current location using the distance function:
+d = sqrt((x_p - x_1)^2 + (y_p - y_1)^2)
+Count the number of iterations. Hint: Keep track of the previous location.
+
+2) Output the final arrival point (the point closest to p), the distance between the arrival point and p, and the number of iterations taken.
+
 ## Binary Search Tree
 
 BST traversal - Find keys in a range. Given 2 alphanumeric values, implement a find_in_range() function that finds all keys within the range of the 2 values that branch from a specific node's key (including the specified node).
